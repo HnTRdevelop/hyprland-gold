@@ -1,0 +1,9 @@
+* {
+    font-family: HackNerdFont;
+    color: #FFD700;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: #0C0C0C;
+}
