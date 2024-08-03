@@ -36,7 +36,7 @@
     horizontal_padding = 16
 
     # Disable frame (border)
-    frame_width = 3
+    frame_width = 2
 
     # Sort messages by urgency.
     sort = no

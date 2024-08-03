@@ -7,14 +7,14 @@
 /* Selector for a box that everything else sits inside of */
 #outer-box {
     border-radius: 16px;
-    border: 4px solid #FFD700;
+    border: 2px solid #FFD700;
 }
 
 /*Selector for the text box for filtering items */
 #input {
     border-radius: 16px;
     margin: 12px 12px 0px 12px;
-    border: 4px solid #FFD700;
+    border: 2px solid #FFD700;
     background-color: #0C0C0C;
 }
 
@@ -26,7 +26,7 @@
 /*Selector for the box containing all entries */
 #inner-box {
     margin: 12px;
-    border: 4px solid #FFD700;
+    border: 2px solid #FFD700;
     border-radius: 16px;
 }
 
