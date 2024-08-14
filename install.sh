@@ -15,5 +15,5 @@ echo "Done!"
 echo
 
 echo "Moving configurations files into .config..."
-cp $dotfiles/.config/* ~/.config/
+cp -r $dotfiles/.config/* ~/.config/
 echo "Installation done!"
