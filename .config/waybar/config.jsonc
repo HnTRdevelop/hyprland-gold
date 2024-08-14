@@ -44,7 +44,8 @@
         "format": "[{}]",
         "return-type": "string",
         "exec": "python /home/hntr/.config/waybar/getplayed.py",
-        "restart-interval": 1
+        "restart-interval": 1,
+        "on-click": "playerctl play-pause"
     },
 
 
@@ -66,7 +67,7 @@
         "power-profiles-daemon",
         "backlight",
         "battery",
-        "clock",
+        "custom/clock",
         "memory",
         "custom/power"
     ],
@@ -123,10 +124,17 @@
         "format-plugged": "[{capacity}%  ]",
         "format-icons": ["󰂎", "󰁺", "󰁻 ", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
-    "clock": {
-        "locale": "en",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "[{:%H:%M:%S %p 󰏟 %Y/%m/%d}]",
+    //"clock": {
+    //    "locale": "en",
+    //    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    //    "format": "[{:%H:%M:%S %p 󰏟 %Y/%m/%d}]",
+    //    "on-click": "gnome-calendar"
+    //},
+    "custom/clock": {
+        "format": "[{}]",
+        "return-type": "string",
+        "exec": "python /home/hntr/.config/waybar/timedate.py",
+        "restart-interval": 1,
         "on-click": "gnome-calendar"
     },
     "memory": {

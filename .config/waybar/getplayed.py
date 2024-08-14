@@ -16,6 +16,6 @@ if status != "":
         value = i[p:]
         metadata[param] = value
 
-    print(f"{"" if status == "playing" else ""} {metadata["artist"]}: {metadata["album"]} - {metadata["title"]}")
+    print(f"{"" if status == "playing" else ""} {metadata["artist"]}: {metadata["album"]} - {metadata["title"]}".replace("&", "and"))
 else:
     print("No player")
